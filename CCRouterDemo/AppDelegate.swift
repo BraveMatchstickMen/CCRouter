@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import CCRouter
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        RouterMap.setup()
+
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.frame = UIScreen.main.bounds
+        Navigation.shared.root(CustomTabBarController())
+        window?.rootViewController = Navigation.shared.rootViewController
+        window?.makeKeyAndVisible()
         return true
     }
 

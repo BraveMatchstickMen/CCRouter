@@ -16,6 +16,16 @@
 		DA06124422545EEF00F3BFCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA06124322545EEF00F3BFCF /* Assets.xcassets */; };
 		DA06124722545EEF00F3BFCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA06124522545EEF00F3BFCF /* LaunchScreen.storyboard */; };
 		DA06124F22545F1300F3BFCF /* CCRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA06121C22545EA300F3BFCF /* CCRouter.framework */; };
+		DA0612512254613200F3BFCF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0612502254613200F3BFCF /* Router.swift */; };
+		DA0612532255AA0800F3BFCF /* RouterContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0612522255AA0800F3BFCF /* RouterContext.swift */; };
+		DA0612552255ABF700F3BFCF /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0612542255ABF600F3BFCF /* Navigation.swift */; };
+		DA0612582255B5D400F3BFCF /* RouterMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0612572255B5D400F3BFCF /* RouterMap.swift */; };
+		DA06125A2255B5E200F3BFCF /* RouterPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0612592255B5E200F3BFCF /* RouterPattern.swift */; };
+		DA06125C2255B6DF00F3BFCF /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06125B2255B6DF00F3BFCF /* CustomTabBarController.swift */; };
+		DA0612602255B70400F3BFCF /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06125F2255B70400F3BFCF /* MeViewController.swift */; };
+		DA0612622255B71400F3BFCF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0612612255B71400F3BFCF /* HomeViewController.swift */; };
+		DA06126B2256124B00F3BFCF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06126A2256124B00F3BFCF /* DetailViewController.swift */; };
+		DA06126D2256133E00F3BFCF /* DetailViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06126C2256133E00F3BFCF /* DetailViewControllerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		DA06124322545EEF00F3BFCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA06124622545EEF00F3BFCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA06124822545EEF00F3BFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA0612502254613200F3BFCF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		DA0612522255AA0800F3BFCF /* RouterContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterContext.swift; sourceTree = "<group>"; };
+		DA0612542255ABF600F3BFCF /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		DA0612572255B5D400F3BFCF /* RouterMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMap.swift; sourceTree = "<group>"; };
+		DA0612592255B5E200F3BFCF /* RouterPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterPattern.swift; sourceTree = "<group>"; };
+		DA06125B2255B6DF00F3BFCF /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		DA06125F2255B70400F3BFCF /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		DA0612612255B71400F3BFCF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DA06126A2256124B00F3BFCF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DA06126C2256133E00F3BFCF /* DetailViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +124,9 @@
 			children = (
 				DA06121F22545EA300F3BFCF /* CCRouter.h */,
 				DA06122022545EA300F3BFCF /* Info.plist */,
+				DA0612502254613200F3BFCF /* Router.swift */,
+				DA0612522255AA0800F3BFCF /* RouterContext.swift */,
+				DA0612542255ABF600F3BFCF /* Navigation.swift */,
 			);
 			path = CCRouter;
 			sourceTree = "<group>";
@@ -120,12 +143,17 @@
 		DA06123B22545EED00F3BFCF /* CCRouterDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DA0612692256123900F3BFCF /* Detail */,
+				DA06125E2255B6F300F3BFCF /* Me */,
+				DA06125D2255B6ED00F3BFCF /* Home */,
+				DA0612562255B5C000F3BFCF /* Router */,
 				DA06123C22545EED00F3BFCF /* AppDelegate.swift */,
 				DA06123E22545EED00F3BFCF /* ViewController.swift */,
 				DA06124022545EED00F3BFCF /* Main.storyboard */,
 				DA06124322545EEF00F3BFCF /* Assets.xcassets */,
 				DA06124522545EEF00F3BFCF /* LaunchScreen.storyboard */,
 				DA06124822545EEF00F3BFCF /* Info.plist */,
+				DA06125B2255B6DF00F3BFCF /* CustomTabBarController.swift */,
 			);
 			path = CCRouterDemo;
 			sourceTree = "<group>";
@@ -135,6 +163,40 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA0612562255B5C000F3BFCF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DA0612572255B5D400F3BFCF /* RouterMap.swift */,
+				DA0612592255B5E200F3BFCF /* RouterPattern.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DA06125D2255B6ED00F3BFCF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DA0612612255B71400F3BFCF /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DA06125E2255B6F300F3BFCF /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				DA06125F2255B70400F3BFCF /* MeViewController.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		DA0612692256123900F3BFCF /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DA06126A2256124B00F3BFCF /* DetailViewController.swift */,
+				DA06126C2256133E00F3BFCF /* DetailViewControllerFactory.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +279,7 @@
 				TargetAttributes = {
 					DA06121B22545EA300F3BFCF = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					DA06122422545EA300F3BFCF = {
 						CreatedOnToolsVersion = 10.1;
@@ -278,6 +341,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0612552255ABF700F3BFCF /* Navigation.swift in Sources */,
+				DA0612532255AA0800F3BFCF /* RouterContext.swift in Sources */,
+				DA0612512254613200F3BFCF /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +359,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0612602255B70400F3BFCF /* MeViewController.swift in Sources */,
 				DA06123F22545EED00F3BFCF /* ViewController.swift in Sources */,
+				DA06125A2255B5E200F3BFCF /* RouterPattern.swift in Sources */,
+				DA06125C2255B6DF00F3BFCF /* CustomTabBarController.swift in Sources */,
+				DA06126D2256133E00F3BFCF /* DetailViewControllerFactory.swift in Sources */,
 				DA06123D22545EED00F3BFCF /* AppDelegate.swift in Sources */,
+				DA0612622255B71400F3BFCF /* HomeViewController.swift in Sources */,
+				DA0612582255B5D400F3BFCF /* RouterMap.swift in Sources */,
+				DA06126B2256124B00F3BFCF /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +531,7 @@
 		DA06123122545EA300F3BFCF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -474,6 +548,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ccrouter.CCRouter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -482,6 +557,7 @@
 		DA06123222545EA300F3BFCF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -506,6 +582,7 @@
 		DA06123422545EA300F3BFCF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CCRouterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -523,6 +600,7 @@
 		DA06123522545EA300F3BFCF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CCRouterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
