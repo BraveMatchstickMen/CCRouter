@@ -36,7 +36,7 @@ public class Navigation: NSObject {
         case .push:
             currentViewController?.navigationController?.pushViewController(viewController, animated: true)
         case .mode:
-            currentViewController?.present(viewController, animated: false, completion: nil)
+            currentViewController?.present(viewController, animated: true, completion: nil)
         }
     }
 }

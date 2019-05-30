@@ -12,4 +12,7 @@ enum RouterPattern {
     static let home = "home"
     static let me = "me"
     static let detail = "detail"
+    static let listing = "listing"
+    static let shoppingBag = "shoppingBag"
+    static let checkout = "checkout"
 }

@@ -26,6 +26,12 @@
 		DA0612622255B71400F3BFCF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0612612255B71400F3BFCF /* HomeViewController.swift */; };
 		DA06126B2256124B00F3BFCF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06126A2256124B00F3BFCF /* DetailViewController.swift */; };
 		DA06126D2256133E00F3BFCF /* DetailViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06126C2256133E00F3BFCF /* DetailViewControllerFactory.swift */; };
+		DA0C80EB229F86950034AA04 /* ListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C80EA229F86950034AA04 /* ListingViewController.swift */; };
+		DA0C80ED229F86D50034AA04 /* ListingViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C80EC229F86D50034AA04 /* ListingViewControllerFactory.swift */; };
+		DA0C80F0229F888B0034AA04 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C80EF229F888B0034AA04 /* CheckoutViewController.swift */; };
+		DA0C80F3229F88B10034AA04 /* ShoppingBagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C80F2229F88B10034AA04 /* ShoppingBagViewController.swift */; };
+		DA0C80F5229F88E90034AA04 /* ShoppingBagViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C80F4229F88E90034AA04 /* ShoppingBagViewControllerFactory.swift */; };
+		DA0C80F7229F89C50034AA04 /* CheckoutViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C80F6229F89C50034AA04 /* CheckoutViewControllerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +75,12 @@
 		DA0612612255B71400F3BFCF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DA06126A2256124B00F3BFCF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DA06126C2256133E00F3BFCF /* DetailViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerFactory.swift; sourceTree = "<group>"; };
+		DA0C80EA229F86950034AA04 /* ListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewController.swift; sourceTree = "<group>"; };
+		DA0C80EC229F86D50034AA04 /* ListingViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewControllerFactory.swift; sourceTree = "<group>"; };
+		DA0C80EF229F888B0034AA04 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		DA0C80F2229F88B10034AA04 /* ShoppingBagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingBagViewController.swift; sourceTree = "<group>"; };
+		DA0C80F4229F88E90034AA04 /* ShoppingBagViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingBagViewControllerFactory.swift; sourceTree = "<group>"; };
+		DA0C80F6229F89C50034AA04 /* CheckoutViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewControllerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +155,9 @@
 		DA06123B22545EED00F3BFCF /* CCRouterDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DA0C80F1229F889B0034AA04 /* ShoppingBag */,
+				DA0C80EE229F88760034AA04 /* Checkout */,
+				DA0C80E9229F867D0034AA04 /* List */,
 				DA0612692256123900F3BFCF /* Detail */,
 				DA06125E2255B6F300F3BFCF /* Me */,
 				DA06125D2255B6ED00F3BFCF /* Home */,
@@ -197,6 +212,33 @@
 				DA06126C2256133E00F3BFCF /* DetailViewControllerFactory.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		DA0C80E9229F867D0034AA04 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				DA0C80EA229F86950034AA04 /* ListingViewController.swift */,
+				DA0C80EC229F86D50034AA04 /* ListingViewControllerFactory.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		DA0C80EE229F88760034AA04 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				DA0C80EF229F888B0034AA04 /* CheckoutViewController.swift */,
+				DA0C80F6229F89C50034AA04 /* CheckoutViewControllerFactory.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		DA0C80F1229F889B0034AA04 /* ShoppingBag */ = {
+			isa = PBXGroup;
+			children = (
+				DA0C80F2229F88B10034AA04 /* ShoppingBagViewController.swift */,
+				DA0C80F4229F88E90034AA04 /* ShoppingBagViewControllerFactory.swift */,
+			);
+			path = ShoppingBag;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,11 +405,17 @@
 				DA06123F22545EED00F3BFCF /* ViewController.swift in Sources */,
 				DA06125A2255B5E200F3BFCF /* RouterPattern.swift in Sources */,
 				DA06125C2255B6DF00F3BFCF /* CustomTabBarController.swift in Sources */,
+				DA0C80F7229F89C50034AA04 /* CheckoutViewControllerFactory.swift in Sources */,
+				DA0C80F0229F888B0034AA04 /* CheckoutViewController.swift in Sources */,
 				DA06126D2256133E00F3BFCF /* DetailViewControllerFactory.swift in Sources */,
 				DA06123D22545EED00F3BFCF /* AppDelegate.swift in Sources */,
+				DA0C80F3229F88B10034AA04 /* ShoppingBagViewController.swift in Sources */,
 				DA0612622255B71400F3BFCF /* HomeViewController.swift in Sources */,
 				DA0612582255B5D400F3BFCF /* RouterMap.swift in Sources */,
+				DA0C80ED229F86D50034AA04 /* ListingViewControllerFactory.swift in Sources */,
 				DA06126B2256124B00F3BFCF /* DetailViewController.swift in Sources */,
+				DA0C80F5229F88E90034AA04 /* ShoppingBagViewControllerFactory.swift in Sources */,
+				DA0C80EB229F86950034AA04 /* ListingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

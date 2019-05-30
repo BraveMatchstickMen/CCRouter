@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let context = RouterContext(title: "Detail", parameters: ["gender": 0, "productId": 1], navigationType: .push)
-        Router.shared.route(RouterPattern.detail, context: context)
+        let context = RouterContext(title: "Listing", parameters: ["gender": 0, "productId": 1], navigationType: .push)
+        Router.shared.route(RouterPattern.listing, context: context)
     }
 }

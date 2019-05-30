@@ -15,6 +15,7 @@ public protocol ViewControllerFactory {
 }
 
 public typealias Pattern = String
+public typealias RouterCallBack = (Any) -> Void
 
 public class Router: NSObject {
 
@@ -31,8 +32,8 @@ public class Router: NSObject {
         storage[pattern] = NSStringFromClass(factory)
     }
 
-    public func route(_ pattern: Pattern, context: RouterContext) {
-        handlePattern(pattern, context: context)
+    public func route(_ pattern: Pattern, context: RouterContext, callBack: RouterCallBack? = nil) {
+        handlePattern(pattern, context: context, callBack: callBack)
     }
 
     public func openExternal() {
@@ -42,7 +43,8 @@ public class Router: NSObject {
 
 private extension Router {
 
-    func handlePattern(_ patter: Pattern, context: RouterContext) {
+    func handlePattern(_ patter: Pattern, context: RouterContext, callBack: RouterCallBack? = nil) {
+        context.callBack = callBack
         guard let factory = createFactory(patter),
             let controller = factory.make(context: context) else {
             return

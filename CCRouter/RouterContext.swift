@@ -15,6 +15,7 @@ public class RouterContext: NSObject {
     public let navigationType: NavigationType
     public var transition: UIViewControllerAnimatedTransitioning?
     public var animated: Bool
+    public var callBack: RouterCallBack?
 
     public init(title: String? = nil,
                 parameters: NSDictionary? = nil,

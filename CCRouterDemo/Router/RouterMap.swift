@@ -11,6 +11,9 @@ import CCRouter
 
 class RouterMap {
     static func setup() {
+        Router.shared.register(RouterPattern.listing, factory: ListingViewControllerFactory.self)
         Router.shared.register(RouterPattern.detail, factory: DetailViewControllerFactory.self)
+        Router.shared.register(RouterPattern.shoppingBag, factory: ShoppingBagViewControllerFactory.self)
+        Router.shared.register(RouterPattern.checkout, factory: CheckoutViewControllerFactory.self)
     }
 }
